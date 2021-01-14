@@ -1,0 +1,10 @@
+python3 -m pyrgg < graph1500_1
+python3 -m pyrgg < graph1500_2
+python3 -m pyrgg < graph1500_3
+python3 -m pyrgg < graph1500_4
+python3 -m pyrgg < graph1500_5
+python3 -m pyrgg < graph1500_6
+python3 -m pyrgg < graph1500_7
+python3 -m pyrgg < graph1500_8
+python3 -m pyrgg < graph1500_9
+python3 -m pyrgg < graph1500_10

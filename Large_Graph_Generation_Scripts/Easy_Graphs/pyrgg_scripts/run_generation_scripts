@@ -1,0 +1,8 @@
+python3 -m pyrgg < graph_2_degree1
+python3 -m pyrgg < graph_2_degree2
+python3 -m pyrgg < graph_3_degree1
+python3 -m pyrgg < graph_3_degree2
+python3 -m pyrgg < graph_4_degree1
+python3 -m pyrgg < graph_4_degree2
+python3 -m pyrgg < graph_5_degree1
+python3 -m pyrgg < graph_5_degree2

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#this is an example bash script that can run the hard-small graph/pairs instance
+
+
+executable_path="xxx"
+general_output_folder="xxx"
+log_files_folder="xxx"
+iteration_output_folder="xxx"
+test_name="xxx"
+graphs_folder="xxx"
+pairs_folder="xxx"
+
+$executable_path/EJOR_Larger_Graphs \
+--perturbFactor=0.5 --subgradFactor=2 --subgradFmult=0.6 --velocityFactor=0.1 \
+--globalFactor=0.05 --subgradFmin=0.0001 --printLevel=0 --maxIter=30000 \
+--maxCPU=3600 --nCPU=4 --nParticles=8 --useVol=false \
+--randComm=true --djikstras_naive=true --initial_dual_max=0.1 \
+--repair_edge_removal_method=largest_viol \
+--repair_add_edge_method=pert_repair_min \
+--printing=false \
+--iteration_checks=true \
+--graph_filename=$graphs_folder/collated_graph_500.bb \
+--pairs_filename=$pairs_folder/pairs_file_475.rpairs \
+--output_filename=$general_output_folder/pairs_file_475.csv \
+--best_lb_filename=$iteration_output_folder/bestlb/pairs_file_475_$test_name.csv \
+--best_ub_filename=$iteration_output_folder/bestub/pairs_file_475_$test_name.csv \
+--average_lb_filename=$iteration_output_folder/averagelb/pairs_file_475_$test_name.csv \
+--average_ub_filename=$iteration_output_folder/averageub/pairs_file_475_$test_name.csv \
+>> "$log_files_folder/pairs_file_475_$test_name.txt"
